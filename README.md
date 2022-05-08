@@ -9,8 +9,15 @@ The dataset we used is credit card dataset from LendingClub, a company which ser
 Since credit risk is an unbalanced classification problem by its very nature, i.e. the number of risky loans is easily always far less than the number of good loans, we used different resampling techniques on our dataset. Resampling makes sure that an equal percentage of the risky loans (and therefore good loans as well) are represented in both our training dataset and testing dataset. 
 The file [credit_risk_resampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/credit_risk_resampling.ipynb) contains resampling exercises followed by running each model. The RandomOverSampler and SMOTE algorithms were used to oversample our data. The ClusterCentroids algorithm was used to undersample the data. The SMOTEENN algorithm combines the oversampling and undersampling technique. 
 Next, ensemble learning models - the BalanceRandomForestClassifier and EasyEnsembleClassifier - were used to help reduce bias. Ensemble learning combines multiple models in order to improve the overall robustness and accuracy of the model. The file [credit_risk_ensemble](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb) consists of code that runs those models on the dataset. 
+
 ## Results
 After running each model, the balanced accuracy score, a confusion matrix, and a classification report was generated. The latter two provide us with values for precision, sensitivity (also known as "recall"), as well as the F1 score, all of which tell us how good a model is. In our results, 0 denotes a high risk or bad loan, and 1 denotes a low risk or good loan.
+The calculations have been done like so:
+Precision = TP/[TP+FP] , where TP is True Positives and FP is False Positives.
+Recall (or Sensitivity) = TP/[TP+FN] , where TP is True Positives, FP is False Positives, and FN is False Negatives.
+F1 score = [2(P * R)]/[P + R] , where P denotes precision of the model and R denotes the recall or sensitivity of the model. 
+Accuracy score is generally caluculated as such:
+Acc. Score = [TP + TN]/Total , where TP is True Positives and TN is True Negatives.
 
 ### Naive Random Oversampling with RandomOverSampler:
 ![Naive Random Oversampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_Naive_Random_Oversampling.png)
