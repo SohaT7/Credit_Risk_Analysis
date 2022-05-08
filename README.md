@@ -32,9 +32,9 @@ Acc. Score = [TP + TN]/Total , where TP is True Positives and TN is True Negativ
 ### Naive Random Oversampling with RandomOverSampler:
 ![Naive Random Oversampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_Naive_Random_Oversampling.png)
 The balanced accuracy score for this model is 0.64.
-The precision of this model to predict high risk or bad loans is [ 67 / (67+6546) ] = 0.01, whereas the precision to predict low risk or good loans is [ 67 / (67+6546) ] = 1.00.
-The recall or sensitivity of the model to predict high risk or bad loans is [ 67 / (67+6546) ] = 0.66, whereas that for low risk or good loans is [ 67 / (67+6546) ] = 0.62.
-The F1 score of this model to predict high risk or bad loans is 0.02, whereas that to predict low risk or good loans is 0.76.
+The precision of this model to predict high risk or bad loans is [ 67 / (67+6546) ] = 0.01, whereas the precision to predict low risk or good loans is [ 10558 / (10558+34) ] = 1.00.
+The recall or sensitivity of the model to predict high risk or bad loans is [ 67 / (67+34) ] = 0.66, whereas that for low risk or good loans is [ 10558 / (10558+6546) ] = 0.62.
+The F1 score of this model to predict high risk or bad loans is [2(0.01 * 0.66)]/[0.01 + 0.66] = 0.02, whereas that to predict low risk or good loans is [2(1.00 * 0.62)]/[1.00 + 0.62] = 0.76.
 
 ### SMOTE Oversampling:
 ![SMOTE Oversampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_SMOTE_Oversampling.png)
