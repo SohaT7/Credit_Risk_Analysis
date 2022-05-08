@@ -31,7 +31,7 @@ Acc. Score = [TP + TN]/Total , where TP is True Positives and TN is True Negativ
 
 For each model, the calculations have been shown so the reader can see which numbers from the confusion matrix have been used, and how or where exactly in these calculations.
 
-### Naive Random Oversampling with RandomOverSampler:
+### (1) Naive Random Oversampling with RandomOverSampler:
 ![Naive Random Oversampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_Naive_Random_Oversampling.png)
 The balanced accuracy score for this model is 0.64.
 
@@ -41,7 +41,7 @@ The recall or sensitivity of the model to predict high risk or bad loans is [ 67
 
 The F1 score of this model to predict high risk or bad loans is [2(0.01 * 0.66)]/[0.01 + 0.66] = 0.02, whereas that to predict low risk or good loans is [2(1.00 * 0.62)]/[1.00 + 0.62] = 0.76.
 
-### SMOTE Oversampling:
+### (2) SMOTE Oversampling:
 ![SMOTE Oversampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_SMOTE_Oversampling.png)
 The balanced accuracy score for this model is 0.65.
 
@@ -51,7 +51,7 @@ The recall or sensitivity of the model to predict high risk or bad loans is [ 62
 
 The F1 score of this model to predict high risk or bad loans is [2(0.01 * 0.61)]/[0.01 + 0.61] = 0.02, whereas that to predict low risk or good loans is [2(1.00 * 0.69)]/[1.00 + 0.69] = 0.81.
 
-### Undersampling with ClusterCentroids:
+### (3) Undersampling with ClusterCentroids:
 ![Undersampling with ClusterCentroids](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_ClusterCentroids.png)
 The balanced accuracy score for this model is 0.54.
 
@@ -61,7 +61,7 @@ The recall or sensitivity of the model to predict high risk or bad loans is [ 70
 
 The F1 score of this model to predict high risk or bad loans is [2(0.01 * 0.69)]/[0.01 + 0.69] = 0.01, whereas that to predict low risk or good loans is [2(1.00 * 0.39)]/[1.00 + 0.39] = 0.57.
 
-### Combination Sampling with SMOTEENN:
+### (4) Combination Sampling with SMOTEENN:
 ![Combination Sampling with SMOTEENN](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_SMOTEENN_Combo.png)
 The balanced accuracy score for this model is 0.66.
 
@@ -71,7 +71,7 @@ The recall or sensitivity of the model to predict high risk or bad loans is [ 76
 
 The F1 score of this model to predict high risk or bad loans is [2(0.01 * 0.75)]/[0.01 + 0.75] = 0.02, whereas that to predict low risk or good loans is [2(1.00 * 0.56)]/[1.00 + 0.56] = 0.72.
 
-### Balanced Random Forest Classifier:
+### (5) Balanced Random Forest Classifier:
 ![Balanced Random Forest Classifier](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_Balanced_Random_Forest_Classifier.png)
 The balanced accuracy score for this model is 0.79.
 
@@ -81,7 +81,7 @@ The recall or sensitivity of the model to predict high risk or bad loans is [ 71
 
 The F1 score of this model to predict high risk or bad loans is [2(0.03 * 0.70)]/[0.03 + 0.70] = 0.06, whereas that to predict low risk or good loans is [2(1.00 * 0.87)]/[1.00 + 0.87] = 0.93.
 
-### Easy Ensemble AdaBoost Classifier:
+### (6) Easy Ensemble AdaBoost Classifier:
 ![Easy Ensemble AdaBoost Classifier](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_Easy_Ensemble_AdaBoost_Classifier.png)
 The balanced accuracy score for this model is 0.93.
 
@@ -92,3 +92,23 @@ The recall or sensitivity of the model to predict high risk or bad loans is [ 93
 The F1 score of this model to predict high risk or bad loans is [2(0.09 * 0.92)]/[0.09 + 0.92] = 0.16, whereas that to predict low risk or good loans is [2(1.00 * 0.94)]/[1.00 + 0.94] = 0.97.
 
 ## Summary
+To summarize the results, the scores from each model are as follows:
+
+(1) Naive Random Oversampling with RandomOverSampler:
+Balanced accuracy score: 0.64; Precision: (high risk: 0.01; low risk: 1.00) ; Recall: (high risk: 0.66; low risk: 0.62); F1 score: (high risk: 0.02; low risk: 0.76).
+
+(2) SMOTE Oversampling:
+Balanced accuracy score: 0.65; Precision: (high risk: 0.01; low risk: 1.00) ; Recall: (high risk: 0.61; low risk: 0.69); F1 score: (high risk: 0.02; low risk: 0.81).
+
+(3) Undersampling with ClusterCentroids:
+Balanced accuracy score: 0.54; Precision: (high risk: 0.01; low risk: 1.00) ; Recall: (high risk: 0.69; low risk: 0.39); F1 score: (high risk: 0.01; low risk: 0.57).
+
+(4) Combination Sampling with SMOTEENN:
+Balanced accuracy score: 0.66; Precision: (high risk: 0.01; low risk: 1.00) ; Recall: (high risk: 0.75; low risk: 0.56); F1 score: (high risk: 0.02; low risk: 0.72).
+
+(5) Balanced Random Forest Classifier:
+Balanced accuracy score: 0.79; Precision: (high risk: 0.03; low risk: 1.00) ; Recall: (high risk: 0.70; low risk: 0.87); F1 score: (high risk: 0.06; low risk: 0.93).
+
+(6) Easy Ensemble AdaBoost Classifier:
+Balanced accuracy score: 0.93; Precision: (high risk: 0.09; low risk: 1.00) ; Recall: (high risk: 0.92; low risk: 0.94); F1 score: (high risk: 0.16; low risk: 0.97).
+
