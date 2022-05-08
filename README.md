@@ -12,9 +12,9 @@ Next, ensemble learning models - the BalanceRandomForestClassifier and EasyEnsem
 ## Results
 After running each model, the balanced accuracy score, a confusion matrix, and a classification report was generated. The latter two provide us with values for precision, sensitivity (also known as "recall"), as well as the F1 score, all of which tell us how good a model is.  
 ### Naive Random Oversampling with RandomOverSampler:
-![Naive Random Oversampling]()
+![Naive Random Oversampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_Naive_Random_Oversampling.png)
 ### SMOTE Oversampling:
-![SMOTE Oversampling]()
+![SMOTE Oversampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_SMOTE_Oversampling.png)
 ### Undersampling with ClusterCentroids:
 ![Undersampling with ClusterCentroids]()
 ### Combination Sampling with SMOTEENN:
