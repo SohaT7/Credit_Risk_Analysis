@@ -94,22 +94,22 @@ The F1 score of this model to predict high risk or bad loans is [2(0.09 * 0.92)]
 ## Summary
 To summarize the results, the scores from each model are as follows:
 
-######(1) Naive Random Oversampling with RandomOverSampler:
+###### (1) Naive Random Oversampling with RandomOverSampler:
 Balanced accuracy score: 0.64; Precision: (high risk: 0.01; low risk: 1.00) ; Recall: (high risk: 0.66; low risk: 0.62); F1 score: (high risk: 0.02; low risk: 0.76).
 
-######(2) SMOTE Oversampling:
+###### (2) SMOTE Oversampling:
 Balanced accuracy score: 0.65; Precision: (high risk: 0.01; low risk: 1.00) ; Recall: (high risk: 0.61; low risk: 0.69); F1 score: (high risk: 0.02; low risk: 0.81).
 
-######(3) Undersampling with ClusterCentroids:
+###### (3) Undersampling with ClusterCentroids:
 Balanced accuracy score: 0.54; Precision: (high risk: 0.01; low risk: 1.00) ; Recall: (high risk: 0.69; low risk: 0.39); F1 score: (high risk: 0.01; low risk: 0.57).
 
-######(4) Combination Sampling with SMOTEENN:
+###### (4) Combination Sampling with SMOTEENN:
 Balanced accuracy score: 0.66; Precision: (high risk: 0.01; low risk: 1.00) ; Recall: (high risk: 0.75; low risk: 0.56); F1 score: (high risk: 0.02; low risk: 0.72).
 
-######(5) Balanced Random Forest Classifier:
+###### (5) Balanced Random Forest Classifier:
 Balanced accuracy score: 0.79; Precision: (high risk: 0.03; low risk: 1.00) ; Recall: (high risk: 0.70; low risk: 0.87); F1 score: (high risk: 0.06; low risk: 0.93).
 
-######(6) Easy Ensemble AdaBoost Classifier:
+###### (6) Easy Ensemble AdaBoost Classifier:
 Balanced accuracy score: 0.93; Precision: (high risk: 0.09; low risk: 1.00) ; Recall: (high risk: 0.92; low risk: 0.94); F1 score: (high risk: 0.16; low risk: 0.97).
 
 In a credit card fraud detection problem, there will be an intricate trade-off between precision and recall. If we go for more precision, that means some of the credit card fraud cases may go undetected but whichever ones are captured will very likely be actually credit card fraud cases too. The rate of false positives will be low. On the other hand, if we go for more sensitivity in our model, we will end up capturing most if not all of the credit card fraud cases. However, we run the risk of also capturing a lot of false positives, i.e. cases which were flagged as credit card fraud but actually are not. In this case, the clients' accounts (false positives) will be unnecessarily frozen and cause them inconvenience.
