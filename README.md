@@ -7,6 +7,11 @@ The purpose of this analysis was to determine which model helps us best with res
 The dataset we used is credit card dataset from LendingClub, a company which services the provision of loans among peers.
 ### Description of the analysis:
 Since credit risk is an unbalanced classification problem by its very nature, i.e. the number of risky loans is easily always far less than the number of good loans, we used different resampling techniques on our dataset. Resampling makes sure that an equal percentage of the risky loans (and therefore good loans as well) are represented in both our training dataset and testing dataset. 
+
+The general process is like so:
+A dataset is divided into a training set (75%) and a testing set (25%). The training set is used for the "fitting" or training process, which results in the creation of a model. The testing set (25%) is then used to test out that model which has just been created. Without resampling, however, we run the risk of having low risk and high risk loans being misrepresented in our training and testing sets. We need to ensure that a similar proportion of good and bad loans (i.e. both classes of our target variable) are represented in the training as well as the testing data.
+To make clear, as an exmaple: 75% of all good loans in our dataset and 25% of all bad loans in our dataset are present in the training set, and likewise, 75% of all good loans in our dataset and 25% of all bad loans in our dataset are present in the testing set as well.
+
 The file [credit_risk_resampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/credit_risk_resampling.ipynb) contains resampling exercises followed by running each model. The RandomOverSampler and SMOTE algorithms were used to oversample our data. The ClusterCentroids algorithm was used to undersample the data. The SMOTEENN algorithm combines the oversampling and undersampling technique. 
 Next, ensemble learning models - the BalanceRandomForestClassifier and EasyEnsembleClassifier - were used to help reduce bias. Ensemble learning combines multiple models in order to improve the overall robustness and accuracy of the model. The file [credit_risk_ensemble](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb) consists of code that runs those models on the dataset. 
 
