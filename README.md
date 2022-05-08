@@ -17,35 +17,41 @@ After running each model, the balanced accuracy score, a confusion matrix, and a
 The balanced accuracy score for this model is 0.64.
 The precision of this model to predict high risk or bad loans is 0.01, whereas the precision to predict low risk or good loans is 1.00.
 The recall or sensitivity of the model to predict high risk or bad loans is 0.66, whereas that for low risk or good loans is 0.62.
+The F1 score of this model to predict high risk or bad loans is 0.02, whereas that to predict low risk or good loans is 0.76.
 
 ### SMOTE Oversampling:
 ![SMOTE Oversampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_SMOTE_Oversampling.png)
 The balanced accuracy score for this model is 0.65.
 The precision of this model to predict high risk or bad loans is 0.01, whereas the precision to predict low risk or good loans is 1.00.
 The recall or sensitivity of the model to predict high risk or bad loans is 0.61, whereas that for low risk or good loans is 0.69.
+The F1 score of this model to predict high risk or bad loans is 0.02, whereas that to predict low risk or good loans is 0.81.
 
 ### Undersampling with ClusterCentroids:
 ![Undersampling with ClusterCentroids](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_ClusterCentroids.png)
 The balanced accuracy score for this model is 0.54.
 The precision of this model to predict high risk or bad loans is 0.01, whereas the precision to predict low risk or good loans is 1.00.
 The recall or sensitivity of the model to predict high risk or bad loans is 0.69, whereas that for low risk or good loans is 0.39.
+The F1 score of this model to predict high risk or bad loans is 0.01, whereas that to predict low risk or good loans is 0.57.
 
 ### Combination Sampling with SMOTEENN:
 ![Combination Sampling with SMOTEENN](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_SMOTEENN_Combo.png)
 The balanced accuracy score for this model is 0.66.
 The precision of this model to predict high risk or bad loans is 0.01, whereas the precision to predict low risk or good loans is 1.00.
 The recall or sensitivity of the model to predict high risk or bad loans is 0.75, whereas that for low risk or good loans is 0.56.
+The F1 score of this model to predict high risk or bad loans is 0.02, whereas that to predict low risk or good loans is 0.72.
 
 ### Balanced Random Forest Classifier:
 ![Balanced Random Forest Classifier](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_Balanced_Random_Forest_Classifier.png)
 The balanced accuracy score for this model is 0.79.
 The precision of this model to predict high risk or bad loans is 0.03, whereas the precision to predict low risk or good loans is 1.00.
 The recall or sensitivity of the model to predict high risk or bad loans is 0.70, whereas that for low risk or good loans is 0.87.
+The F1 score of this model to predict high risk or bad loans is 0.06, whereas that to predict low risk or good loans is 0.93.
 
 ### Easy Ensemble AdaBoost Classifier:
 ![Easy Ensemble AdaBoost Classifier](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_Easy_Ensemble_AdaBoost_Classifier.png)
 The balanced accuracy score for this model is 0.93.
 The precision of this model to predict high risk or bad loans is 0.09, whereas the precision to predict low risk or good loans is 1.00.
 The recall or sensitivity of the model to predict high risk or bad loans is 0.92, whereas that for low risk or good loans is 0.94.
+The F1 score of this model to predict high risk or bad loans is 0.16, whereas that to predict low risk or good loans is 0.97.
 
 ## Summary
