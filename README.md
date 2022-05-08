@@ -11,3 +11,16 @@ The file [credit_risk_resampling]() contains resampling exercises followed by ru
 Next, ensemble learning models - the BalanceRandomForestClassifier and EasyEnsembleClassifier - were used to help reduce bias. Ensemble learning combines multiple models in order to improve the overall robustness and accuracy of the model. The file [credit_risk_ensemble]() consists of code that runs those models on the dataset. 
 ## Results
 After running each model, the balanced accuracy score, a confusion matrix, and a classification report was generated. The latter two provide us with values for precision, sensitivity (also known as "recall"), as well as the F1 score, all of which tell us how good a model is.  
+### Naive Random Oversampling with RandomOverSampler:
+![Naive Random Oversampling]()
+### SMOTE Oversampling:
+![SMOTE Oversampling]()
+### Undersampling with ClusterCentroids:
+![Undersampling with ClusterCentroids]()
+### Combination Sampling with SMOTEENN:
+![Combination Sampling with SMOTEENN]()
+### Balanced Random Forest Classifier:
+![Balanced Random Forest Classifier]()
+### Easy Ensemble AdaBoost Classifier:
+![Easy Ensemble AdaBoost Classifier]()
+## Summary
