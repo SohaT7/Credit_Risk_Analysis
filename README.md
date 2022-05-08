@@ -16,7 +16,7 @@ After running each model, the balanced accuracy score, a confusion matrix, and a
 ### SMOTE Oversampling:
 ![SMOTE Oversampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_SMOTE_Oversampling.png)
 ### Undersampling with ClusterCentroids:
-![Undersampling with ClusterCentroids]()
+![Undersampling with ClusterCentroids](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_ClusterCentroids.png)
 ### Combination Sampling with SMOTEENN:
 ![Combination Sampling with SMOTEENN]()
 ### Balanced Random Forest Classifier:
