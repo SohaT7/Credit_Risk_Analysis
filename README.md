@@ -20,7 +20,7 @@ After running each model, the balanced accuracy score, a confusion matrix, and a
 ### Combination Sampling with SMOTEENN:
 ![Combination Sampling with SMOTEENN](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_SMOTEENN_Combo.png)
 ### Balanced Random Forest Classifier:
-![Balanced Random Forest Classifier]()
+![Balanced Random Forest Classifier](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_Balanced_Random_Forest_Classifier.png)
 ### Easy Ensemble AdaBoost Classifier:
-![Easy Ensemble AdaBoost Classifier]()
+![Easy Ensemble AdaBoost Classifier](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Image_Easy_Ensemble_AdaBoost_Classifier.png)
 ## Summary
