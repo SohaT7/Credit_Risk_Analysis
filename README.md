@@ -6,12 +6,12 @@
     - [Tools Used](#tools-used)
     - [Description](#description)
 - [Results](#results)
-    - [(1) Naive Random Oversampling with RandomOverSampler](#(1)-naive-random-oversampling-with-randomoversampler)
+    - [Naive Random Oversampling with RandomOverSampler](#naive-random-oversampling-with-randomoversampler)
     - [SMOTE Oversampling](#smote-oversampling)
-    - [(3) Undersampling with ClusterCentroids](#(3)-Undersampling-with-ClusterCentroids)
-    - [(4) Combination Sampling with SMOTEENN](#(4)-Combination-Sampling-with-SMOTEENN)
-    - [(5) Balanced Random Forest Classifier](#(5)-Balanced-Random-Forest-Classifier)
-    - [(6) Easy Ensemble AdaBoost Classifier](#(6)-Easy-Ensemble-AdaBoost-Classifier)
+    - [Undersampling with ClusterCentroids](#Undersampling-with-ClusterCentroids)
+    - [Combination Sampling with SMOTEENN](#Combination-Sampling-with-SMOTEENN)
+    - [Balanced Random Forest Classifier](#Balanced-Random-Forest-Classifier)
+    - [Easy Ensemble AdaBoost Classifier](#Easy-Ensemble-AdaBoost-Classifier)
 - [Summary](#summary)
 - [Contact Information](#contact-information)
 
@@ -59,7 +59,7 @@ The formulae for Precision, Sensitivity (or Recall), F1 score, and Accuracy scor
  - F1 score = [2(P * R)]/[P + R]
  - Accuracy score (generally caluculated as): Acc. Score = [TP + TN]/Total
 
-### (1) Naive Random Oversampling with RandomOverSampler:
+### Naive Random Oversampling with RandomOverSampler:
 ![Naive Random Oversampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Images/Image_Naive_Random_Oversampling.png)
 
  - Balanced accuracy score = 0.64
@@ -70,7 +70,7 @@ The formulae for Precision, Sensitivity (or Recall), F1 score, and Accuracy scor
  - F1 score (to predict high risk or bad loans) = [2(0.01 * 0.66)]/[0.01 + 0.66] = 0.02
  - F1 score (to predict low risk or good loans) = [2(1.00 * 0.62)]/[1.00 + 0.62] = 0.76
 
-### (2) SMOTE Oversampling:
+### SMOTE Oversampling:
 ![SMOTE Oversampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Images/Image_SMOTE_Oversampling.png)
 
 - Balanced accuracy score = 0.65
@@ -81,7 +81,7 @@ The formulae for Precision, Sensitivity (or Recall), F1 score, and Accuracy scor
 - F1 score (to predict high risk or bad loans) = [2(0.01 * 0.61)]/[0.01 + 0.61] = 0.02
 - F1 score (to predict low risk or good loans) = [2(1.00 * 0.69)]/[1.00 + 0.69] = 0.81
 
-### (3) Undersampling with ClusterCentroids:
+### Undersampling with ClusterCentroids:
 ![Undersampling with ClusterCentroids](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Images/Image_ClusterCentroids.png)
 
 - Balanced accuracy score = 0.54
@@ -92,7 +92,7 @@ The formulae for Precision, Sensitivity (or Recall), F1 score, and Accuracy scor
 - F1 score (to predict high risk or bad loans) = [2(0.01 * 0.69)]/[0.01 + 0.69] = 0.01
 - F1 score (to predict low risk or good loans) = [2(1.00 * 0.39)]/[1.00 + 0.39] = 0.57
 
-### (4) Combination Sampling with SMOTEENN:
+### Combination Sampling with SMOTEENN:
 ![Combination Sampling with SMOTEENN](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Images/Image_SMOTEENN_Combo.png)
 
 - Balanced accuracy score = 0.66
@@ -103,7 +103,7 @@ The formulae for Precision, Sensitivity (or Recall), F1 score, and Accuracy scor
 - F1 score (to predict high risk or bad loans) = [2(0.01 * 0.75)]/[0.01 + 0.75] = 0.02
 - F1 score (to predict low risk or good loans) = [2(1.00 * 0.56)]/[1.00 + 0.56] = 0.72
 
-### (5) Balanced Random Forest Classifier:
+### Balanced Random Forest Classifier:
 ![Balanced Random Forest Classifier](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Images/Image_Balanced_Random_Forest_Classifier.png)
 
 - Balanced accuracy score = 0.79
@@ -114,7 +114,7 @@ The formulae for Precision, Sensitivity (or Recall), F1 score, and Accuracy scor
 - F1 score (to predict high risk or bad loans) = [2(0.03 * 0.70)]/[0.03 + 0.70] = 0.06
 - F1 score (to predict low risk or good loans) = [2(1.00 * 0.87)]/[1.00 + 0.87] = 0.93
 
-### (6) Easy Ensemble AdaBoost Classifier:
+### Easy Ensemble AdaBoost Classifier:
 ![Easy Ensemble AdaBoost Classifier](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/Images/Image_Easy_Ensemble_AdaBoost_Classifier.png)
 
 - Balanced accuracy score = 0.93
