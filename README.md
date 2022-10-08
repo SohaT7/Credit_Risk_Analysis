@@ -6,7 +6,7 @@
     - [Tools Used](#tools-used)
     - [Description](#description)
 - [Results](#results)
-    - [(1) Naive Random Oversampling with RandomOverSampler](#(1)-Naive-Random-Oversampling-with-RandomOverSampler)
+    - [(1) Naive Random Oversampling with RandomOverSampler](#Naive-Random-Oversampling-with-RandomOverSampler)
     - [(2) SMOTE Oversampling](#(2)-SMOTE-Oversampling)
     - [(3) Undersampling with ClusterCentroids](#(3)-Undersampling-with-ClusterCentroids)
     - [(4) Combination Sampling with SMOTEENN](#(4)-Combination-Sampling-with-SMOTEENN)
