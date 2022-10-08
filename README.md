@@ -1,4 +1,20 @@
 # Credit_Risk_Analysis
+## Table of Contents
+- [Overview of the Analysis](#overview-of-the-analysis)
+    - [Purpose](#purpose)
+    - [About the Dataset](#about-the-dataset)
+    - [Tools Used](#tools-used)
+    - [Description](#description)
+- [Results](#results)
+    - [(1) Naive Random Oversampling with RandomOverSampler]((1)-Naive-Random-Oversampling-with-RandomOverSampler)
+    - [(2) SMOTE Oversampling]((2)-SMOTE-Oversampling)
+    - [(3) Undersampling with ClusterCentroids]((3)-Undersampling-with-ClusterCentroids)
+    - [(4) Combination Sampling with SMOTEENN]((4)-Combination-Sampling-with-SMOTEENN)
+    - [(5) Balanced Random Forest Classifier]((5)-Balanced-Random-Forest-Classifier)
+    - [(6) Easy Ensemble AdaBoost Classifier]((6)-Easy-Ensemble-AdaBoost-Classifier)
+- [Summary](#summary)
+- [Contact Information](#contact-information)
+
 ## Overview of the analysis
 ### Purpose:
 The purpose of this analysis is to build and evaluate different machine learning models (logistic regression classifier models) to predict credit risk.
