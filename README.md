@@ -1,19 +1,28 @@
 # Credit_Risk_Analysis
-
 ## Overview of the analysis
-### Purpose of the analysis:
-The purpose of this analysis was to determine which model helps us best with resolving our credit card risk problem. 
-### About the dataset:
-The dataset we used is credit card dataset from LendingClub, a company which services the provision of loans among peers.
-### Description of the analysis:
-Since credit risk is an unbalanced classification problem by its very nature, i.e. the number of risky loans is easily always far less than the number of good loans, we used different resampling techniques on our dataset. Resampling makes sure that an equal percentage of the risky loans (and therefore good loans as well) are represented in both our training dataset and testing dataset. 
+### Purpose:
+The purpose of this analysis is to build and evaluate different machine learning models (logistic regression classifier models) to predict credit risk.
 
-The general process is like so:
-A dataset is divided into a training set (75%) and a testing set (25%). The training set is used for the "fitting" or training process, which results in the creation of a model. The testing set (25%) is then used to test out that model which has just been created. Without resampling, however, we run the risk of having low risk and high risk loans being misrepresented in our training and testing sets. We need to ensure that a similar proportion of good and bad loans (i.e. both classes of our target variable) are represented in the training as well as the testing data.
-To make clear, as an exmaple: 75% of all good loans in our dataset and 25% of all bad loans in our dataset are present in the training set, and likewise, 75% of all good loans in our dataset and 25% of all bad loans in our dataset are present in the testing set as well.
+### About the Dataset:
+The dataset used here is credit loan dataset from LendingClub, a FinTech company, which services peer-to-peer loans. The csv file contains about 115677 records.
 
-The file [credit_risk_resampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/credit_risk_resampling.ipynb) contains resampling exercises followed by running each model. The RandomOverSampler and SMOTE algorithms were used to oversample our data. The ClusterCentroids algorithm was used to undersample the data. The SMOTEENN algorithm combines the oversampling and undersampling technique. 
-Next, ensemble learning models - the BalanceRandomForestClassifier and EasyEnsembleClassifier - were used to help reduce bias. Ensemble learning combines multiple models in order to improve the overall robustness and accuracy of the model. The file [credit_risk_ensemble](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb) consists of code that runs those models on the dataset. 
+### Tools Used:
+ - Python (Pandas, NumPy, Scikit-learn, Imblanced-learn libraries)
+
+### Description:
+The dataset is divided into a training set (75%) and a testing set (25%); the training set will be used to train (i.e. 'fit') the logistic regression classifier model, while the testing set will be used to compare the predicted values with the target values in order to asess the predictive capability of the model.
+
+Since credit risk is an unbalanced classification problem, i.e. the number of risky loans is easily always far less than the number of good loans, we use different resampling techniques on our dataset. Resampling techiques ensure that the risky loans are balanced (and not disproportionately represented) in both the training and testing sets. 
+
+The different resampling techniques used here (code to be found in the file [credit_risk_resampling](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/credit_risk_resampling.ipynb)) include: 
+
+ - Oversampling: RandomOverSampler and SMOTE algorithms
+ - Undersampling: ClusterCentroids algorithm
+ - A combination of oversampling and undersampling: SMOTEENN algorithm
+
+Next, ensemble learning models were tried (code to be found in the file [credit_risk_ensemble](https://github.com/SohaT7/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)) in order to try and improve the model performance:
+ - BalanceRandomForestClassifier
+ - EasyEnsembleClassifier
 
 ## Results
 After running each model, the balanced accuracy score, a confusion matrix, and a classification report was generated. The latter two provide us with values for precision, sensitivity (also known as "recall"), as well as the F1 score, all of which tell us how good a model is. In our results, 0 denotes a high risk or bad loan, and 1 denotes a low risk or good loan.
@@ -115,3 +124,6 @@ Balanced accuracy score: 0.93; Precision: (high risk: 0.09; low risk: 1.00) ; Re
 In a credit card fraud detection problem, there will be an intricate trade-off between precision and recall. If we go for more precision, that means some of the credit card fraud cases may go undetected but whichever ones are captured will very likely be actually credit card fraud cases too. The rate of false positives will be low. On the other hand, if we go for more sensitivity in our model, we will end up capturing most if not all of the credit card fraud cases. However, we run the risk of also capturing a lot of false positives, i.e. cases which were flagged as credit card fraud but actually are not. In this case, the clients' accounts (false positives) will be unnecessarily frozen and cause them inconvenience.
 
 From among our models, the two ensemble learning models perform better than the ones that involved only resampling. From among the Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier, the latter performs better: it has a greater accuracy score (0.93 versus 0.73 from the Balanced Random Forest Classifier), better precision with detecting bad loans (0.09 versus 0.03), and better recall when it comes to determining a bad loan (0.92 versus 0.70). Its F1 score is also the highest from among all the other models, at 0.16. The higher the score, the better the model. Therefore, it is the Easy Ensemble AdaBoost Classifier model that should be used.
+
+## Contact Information
+Email: st.sohatariq@gmail.com
