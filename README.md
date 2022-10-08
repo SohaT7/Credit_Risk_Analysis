@@ -7,7 +7,7 @@
     - [Description](#description)
 - [Results](#results)
     - [(1) Naive Random Oversampling with RandomOverSampler](#(1)-naive-random-oversampling-with-randomoversampler)
-    - [(2) SMOTE Oversampling](#smote-oversampling)
+    - [SMOTE Oversampling](#smote-oversampling)
     - [(3) Undersampling with ClusterCentroids](#(3)-Undersampling-with-ClusterCentroids)
     - [(4) Combination Sampling with SMOTEENN](#(4)-Combination-Sampling-with-SMOTEENN)
     - [(5) Balanced Random Forest Classifier](#(5)-Balanced-Random-Forest-Classifier)
